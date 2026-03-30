@@ -23,6 +23,11 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "SplitIt — División de Gastos",
   description: "Dividí los gastos de tu grupo de forma automática y sin drama.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 }
 
 export default function RootLayout({
