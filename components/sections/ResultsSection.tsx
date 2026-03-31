@@ -8,6 +8,7 @@ import { Avatar } from "@/components/ui/Avatar"
 import { Badge } from "@/components/ui/Badge"
 import { formatMoney } from "@/lib/splitAlgorithm"
 import type { Balance, Transaction } from "@/types"
+import { MoveLeft } from "lucide-react"
 
 // ─── Stat Card ────────────────────────────────────────────────────────────────
 
@@ -247,7 +248,8 @@ export function ResultsSection() {
           onClick={() => dispatch(reset())}
           className="text-muted text-sm md:text-base px-4 py-2.5 rounded-xl border border-border hover:text-text-primary hover:border-text-primary transition-colors"
         >
-          ← Empezar de nuevo
+          <MoveLeft className="inline-block w-5 h-5 md:w-6 md:h-6 mr-0.5 pb-0.5"/>
+          Empezar de nuevo
         </button>
       </div>
     </div>

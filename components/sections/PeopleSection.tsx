@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from "@/store"
 import { addPerson, calculate } from "@/store/splitSlice"
 import { PersonCard } from "@/components/PersonCard"
+import { MoveRight } from 'lucide-react';
 
 export function PeopleSection() {
   const dispatch = useAppDispatch()
@@ -53,7 +54,8 @@ export function PeopleSection() {
           onClick={() => dispatch(calculate())}
           className="w-full bg-accent text-bg font-bold text-base md:text-lg py-4 rounded-2xl tracking-wide disabled:opacity-25 disabled:cursor-not-allowed hover:not-disabled:opacity-90 transition-all active:scale-[0.98]"
         >
-          Calcular división →
+          Calcular división
+          <MoveRight className="inline-block w-5 h-5 md:w-6 md:h-6 ml-0.5 pb-0.5"/>
         </button>
       )}
     </section>
